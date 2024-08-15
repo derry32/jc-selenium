@@ -26,11 +26,15 @@ public class FirstSelenium {
         //exit
         driver.quit();
         System.out.println("Exit Browser");
+
+
+    }
+
+    public static void delay(long detik) {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(detik + 1000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-        };
-
+        }
     }
 }

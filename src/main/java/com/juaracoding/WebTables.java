@@ -16,7 +16,7 @@ public class WebTables {
         driver.get("https://demoqa.com/webtables");
         System.out.println("Open Browser URL");
 
-        js.executeScript("window.scrollBy(0,350)");
+        js.executeScript("window.scrollBy(0,300)");
         Thread.sleep(2000);
         driver.findElement(By.id("addNewRecordButton")).click();
         Thread.sleep(2000);
@@ -65,7 +65,7 @@ public class WebTables {
         driver.findElement(By.id("submit")).click();
         System.out.println("Berhasil Edit Form");
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         driver.findElement(By.id("delete-record-4")).click();
         System.out.println("Berhasil menghapus");
 
